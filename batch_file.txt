@@ -13,7 +13,7 @@ Creating Sequence rtt_main
 --> RTT System Initialization
 
 Script Request --> TIME_INFO
-Setting the following time in the Model: 05-27 -2013   12:14:52 
+Setting the following time in the Model: 05-27 -2013   12:57:07 
 
 Script Request --> SET_PROJECT
 
@@ -36,18 +36,18 @@ Script Request --> GET_EVENT_DATA
 # 
 
 Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 1824991
-# generated script variable --> self.s2 = 2: timestamp: 1825006
-# generated script variable --> self.TEST_RUN = "r1": timestamp: 1825026
-# generated script variable --> self.description = "hello r1": timestamp: 1825046
-# generated script variable --> self.s1 = 1: timestamp: 1825066
-# Test Setup --> r1 Debug Level: 3: timestamp: 1825072
-# Start Test --> : timestamp: 1825246
-# self.model.c1.Value == 2.0: timestamp: 1825247
-# self.model.c2.Value == 2.0: timestamp: 1825247
-# self.model.c3.Value == 3.0: timestamp: 1825247
-# Validation Timestamp: 1825247: timestamp: 1825247
-# set c1: timestamp: 1825247
+# Get Script Variables: timestamp: 4360009
+# generated script variable --> self.s2 = 2: timestamp: 4360024
+# generated script variable --> self.TEST_RUN = "r1": timestamp: 4360044
+# generated script variable --> self.description = "hello r1": timestamp: 4360064
+# generated script variable --> self.s1 = 1: timestamp: 4360084
+# Test Setup --> r1 Debug Level: 3: timestamp: 4360090
+# Start Test --> : timestamp: 4360368
+# self.model.c1.Value == 2.0: timestamp: 4360369
+# self.model.c2.Value == 2.0: timestamp: 4360369
+# self.model.c3.Value == 3.0: timestamp: 4360369
+# Validation Timestamp: 4360369: timestamp: 4360369
+# set c1: timestamp: 4360369
 
 def test1_test_test():
     """
@@ -58,8 +58,8 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 1825247: timestamp: 1825247
-# set c2: timestamp: 1825247
+# Validation Timestamp: 4360369: timestamp: 4360369
+# set c2: timestamp: 4360369
 
 def test2_test_test():
     """
@@ -70,8 +70,8 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 1825247: timestamp: 1825247
-# set c3: timestamp: 1825247
+# Validation Timestamp: 4360369: timestamp: 4360369
+# set c3: timestamp: 4360369
 
 def test3_test_test():
     """
@@ -82,10 +82,10 @@ def test3_test_test():
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r1: timestamp: 1825248
+# Test Done --> r1: timestamp: 4360370
 
 -Completed script1: r1
--Completed script1 r1 in 2.04699993134 sec and No Capturing
+-Completed script1 r1 in 2.06200003624 sec and No Capturing
 ------------------------------------------------------------------
 
 
@@ -100,18 +100,18 @@ Script Request --> GET_EVENT_DATA
 # 
 
 Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 1827076
-# generated script variable --> self.s2 = 22: timestamp: 1827091
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 1827111
-# generated script variable --> self.description = "hello r2": timestamp: 1827131
-# generated script variable --> self.s1 = 11: timestamp: 1827151
-# Test Setup --> r2 Debug Level: 3: timestamp: 1827157
-# Start Test --> : timestamp: 1827340
-# self.model.c1.Value == 2.0: timestamp: 1827341
-# self.model.c2.Value == 2.0: timestamp: 1827341
-# self.model.c3.Value == 3.0: timestamp: 1827341
-# Validation Timestamp: 1827341: timestamp: 1827341
-# set c1: timestamp: 1827341
+# Get Script Variables: timestamp: 4362084
+# generated script variable --> self.s2 = 22: timestamp: 4362099
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 4362119
+# generated script variable --> self.description = "hello r2": timestamp: 4362139
+# generated script variable --> self.s1 = 11: timestamp: 4362159
+# Test Setup --> r2 Debug Level: 3: timestamp: 4362165
+# Start Test --> : timestamp: 4362460
+# self.model.c1.Value == 2.0: timestamp: 4362461
+# self.model.c2.Value == 2.0: timestamp: 4362461
+# self.model.c3.Value == 3.0: timestamp: 4362461
+# Validation Timestamp: 4362461: timestamp: 4362461
+# set c1: timestamp: 4362461
 
 def test1_test_test():
     """
@@ -122,8 +122,8 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 1827341: timestamp: 1827341
-# set c2: timestamp: 1827341
+# Validation Timestamp: 4362461: timestamp: 4362461
+# set c2: timestamp: 4362461
 
 def test2_test_test():
     """
@@ -134,8 +134,8 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 1827341: timestamp: 1827341
-# set c3: timestamp: 1827341
+# Validation Timestamp: 4362461: timestamp: 4362461
+# set c3: timestamp: 4362461
 
 def test3_test_test():
     """
@@ -146,14 +146,14 @@ def test3_test_test():
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r2: timestamp: 1827342
+# Test Done --> r2: timestamp: 4362462
 
 -Completed script1: r2
--Completed script1 r2 in 2.07800006866 sec and No Capturing
+-Completed script1 r2 in 2.1099998951 sec and No Capturing
 ------------------------------------------------------------------
 
 
 Creating Sequence rtt_main
 
 
-------------------------------
+-------------------------------
