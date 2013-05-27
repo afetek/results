@@ -13,7 +13,7 @@ Creating Sequence rtt_main
 --> RTT System Initialization
 
 Script Request --> TIME_INFO
-Setting the following time in the Model: 05-27 -2013   13:31:06 
+Setting the following time in the Model: 05-27 -2013   13:37:20 
 
 Script Request --> SET_PROJECT
 
@@ -36,27 +36,58 @@ Script Request --> GET_EVENT_DATA
 # 
 
 Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 6398913
-# generated script variable --> self.s2 = 2: timestamp: 6398928
-# generated script variable --> self.TEST_RUN = "r1": timestamp: 6398948
-# generated script variable --> self.description = "hello r1": timestamp: 6398968
-# generated script variable --> self.s1 = 1: timestamp: 6398988
-# Test Setup --> r1 Debug Level: 3: timestamp: 6398994
-# Start Test --> : timestamp: 6399169
+# Get Script Variables: timestamp: 6772927
+# generated script variable --> self.s2 = 2: timestamp: 6772942
+# generated script variable --> self.TEST_RUN = "r1": timestamp: 6772962
+# generated script variable --> self.description = "hello r1": timestamp: 6772982
+# generated script variable --> self.s1 = 1: timestamp: 6773002
+# Test Setup --> r1 Debug Level: 3: timestamp: 6773008
+# Start Test --> : timestamp: 6773183
+# signal1: 1: timestamp: 6773184
+# signal2: 2: timestamp: 6773184
+# self.model.c1.Value == 2.0: timestamp: 6773184
+# self.model.c2.Value == 2.0: timestamp: 6773184
+# self.model.c3.Value == 3.0: timestamp: 6773184
+# Validation Timestamp: 6773184: timestamp: 6773184
+# set c1: timestamp: 6773184
 
 def test1_test_test():
     """
-    test 1 for run r1: Exception in RunScript
+    test 1 for run r1: Confirm self.model.d1 is >= 4.0 and <= 6.0: actual value is 4.0
     """
 
-    test_passed = False
+    test_passed = True
     assert test_passed, "Failed test1_test"
 
 
-# Test Done --> r1: timestamp: 6399170
+# Validation Timestamp: 6773184: timestamp: 6773184
+# set c2: timestamp: 6773184
+
+def test2_test_test():
+    """
+    test 2 for run r1: Confirm self.model.d2 is >= 4.0 and <= 6.0: actual value is 4.0
+    """
+
+    test_passed = True
+    assert test_passed, "Failed test2_test"
+
+
+# Validation Timestamp: 6773184: timestamp: 6773184
+# set c3: timestamp: 6773184
+
+def test3_test_test():
+    """
+    test 3 for run r1: Confirm self.model.d3 is >= 4.0 and <= 6.0: actual value is 6.0
+    """
+
+    test_passed = True
+    assert test_passed, "Failed test3_test"
+
+
+# Test Done --> r1: timestamp: 6773185
 
 -Completed script1: r1
--Completed script1 r1 in 2.06200003624 sec and No Capturing
+-Completed script1 r1 in 2.04699993134 sec and No Capturing
 ------------------------------------------------------------------
 
 
@@ -71,84 +102,55 @@ Script Request --> GET_EVENT_DATA
 # 
 
 Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 6401011
-# generated script variable --> self.s2 = 22: timestamp: 6401026
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 6401046
-# generated script variable --> self.description = "hello r2": timestamp: 6401066
-# generated script variable --> self.s1 = 11: timestamp: 6401086
-# Test Setup --> r2 Debug Level: 3: timestamp: 6401092
-# Start Test --> : timestamp: 6401378
+# Get Script Variables: timestamp: 6775013
+# generated script variable --> self.s2 = 22: timestamp: 6775028
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 6775048
+# generated script variable --> self.description = "hello r2": timestamp: 6775068
+# generated script variable --> self.s1 = 11: timestamp: 6775088
+# Test Setup --> r2 Debug Level: 3: timestamp: 6775094
+# Start Test --> : timestamp: 6775277
+# signal1: 11: timestamp: 6775278
+# signal2: 22: timestamp: 6775278
+# self.model.c1.Value == 2.0: timestamp: 6775278
+# self.model.c2.Value == 2.0: timestamp: 6775278
+# self.model.c3.Value == 3.0: timestamp: 6775278
+# Validation Timestamp: 6775278: timestamp: 6775278
+# set c1: timestamp: 6775278
 
 def test1_test_test():
     """
-    test 1 for run r2: Exception in RunScript
+    test 1 for run r2: Confirm self.model.d1 is >= 4.0 and <= 6.0: actual value is 4.0
     """
 
-    test_passed = False
+    test_passed = True
     assert test_passed, "Failed test1_test"
 
 
-# Test Done --> r2: timestamp: 6401379
+# Validation Timestamp: 6775278: timestamp: 6775278
+# set c2: timestamp: 6775278
+
+def test2_test_test():
+    """
+    test 2 for run r2: Confirm self.model.d2 is >= 4.0 and <= 6.0: actual value is 4.0
+    """
+
+    test_passed = True
+    assert test_passed, "Failed test2_test"
+
+
+# Validation Timestamp: 6775278: timestamp: 6775278
+# set c3: timestamp: 6775278
+
+def test3_test_test():
+    """
+    test 3 for run r2: Confirm self.model.d3 is >= 4.0 and <= 6.0: actual value is 6.0
+    """
+
+    test_passed = True
+    assert test_passed, "Failed test3_test"
+
+
+# Test Done --> r2: timestamp: 6775279
 
 -Completed script1: r2
--Completed script1 r2 in 2.06200003624 sec and No Capturing
-------------------------------------------------------------------
-
-
-Creating Sequence rtt_main
-
-
-------------------------------------------------------------------
-Running script2: r1
-
-Script Request --> START_CAPTURE
-
-Script Request --> STOP_CAPTURE
-
-Script Request --> GET_EVENT_DATA
-# 
-
-Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 6403632
-# generated script variable --> self.signal2 = 2: timestamp: 6403647
-# generated script variable --> self.TEST_RUN = "r1": timestamp: 6403667
-# generated script variable --> self.description = "hello r1": timestamp: 6403687
-# generated script variable --> self.signal1 = 1: timestamp: 6403707
-# Test Setup --> r1 Debug Level: 3: timestamp: 6403713
-# Start Test --> : timestamp: 6403890
-# signal1: 1: timestamp: 6403891
-# signal2: 2: timestamp: 6403891
-
-def test1_test_test():
-    """
-    test 1 for run r1: FAIL: 
-    """
-
-    test_passed = False
-    assert test_passed, "Failed test1_test"
-
-
-# Test Done --> r1: timestamp: 6403891
-
--Completed script2: r1
--Completed script2 r1 in 1.04600000381 sec and No Capturing
-------------------------------------------------------------------
-
-
-------------------------------------------------------------------
-Running script2: r2
-
-Script Request --> START_CAPTURE
-
-Script Request --> STOP_CAPTURE
-
-Script Request --> GET_EVENT_DATA
-# 
-
-Script Request --> UPLOAD_SCRIPT_DATA
-# Get Script Variables: timestamp: 6404693
-# generated script variable --> self.signal2 = 22: timestamp: 6404708
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 6404728
-# generated script variable --> self.description = "hello r2": timestamp: 6404748
-# generated script variable --> self.signal1 = 11: timestamp: 6404768
-# Test Setup --> r2 Debug Level: 3: timestamp: 640
+-Completed script1 r2 in 2.04699993134 sec and No Capt
