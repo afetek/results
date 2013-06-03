@@ -1,17 +1,19 @@
-# Get Script Variables: timestamp: 5663331
-# generated script variable --> self.s2 = 1111: timestamp: 5663346
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 5663366
-# generated script variable --> self.description = "hello r2": timestamp: 5663386
-# generated script variable --> self.s1 = 111: timestamp: 5663406
-# Test Setup --> r2 Debug Level: 3: timestamp: 5663412
-# Start Test --> : timestamp: 5663753
-# signal1: 111: timestamp: 5663754
-# signal2: 1111: timestamp: 5663754
-# self.model.c1.Value == 2.0: timestamp: 5667472
-# self.model.c2.Value == 2.0: timestamp: 5667472
-# self.model.c3.Value == 3.0: timestamp: 5667472
-# Validation Timestamp: 5667472: timestamp: 5667472
-# set c1: timestamp: 5667472
+# Get Script Variables: timestamp: 540979
+# generated script variable --> self.s2 = 1111: timestamp: 540994
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 541014
+# generated script variable --> self.description = "hello r2": timestamp: 541034
+# generated script variable --> self.s1 = 111: timestamp: 541054
+# Test Setup --> r2 Debug Level: 3: timestamp: 541060
+# Start Test --> : timestamp: 541242
+# signal1: 111: timestamp: 541243
+# signal2: 1111: timestamp: 541243
+# Waitng ...: timestamp: 541243
+# ... Ok: timestamp: 544516
+# self.model.c1.Value == 2.0: timestamp: 544516
+# self.model.c1.Value == 2.0: timestamp: 544516
+# self.model.c3.Value == 3.0: timestamp: 544516
+# Validation Timestamp: 544516: timestamp: 544516
+# set c1: timestamp: 544516
 
 def test1_test_test():
     """
@@ -22,8 +24,8 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 5667472: timestamp: 5667472
-# set c2: timestamp: 5667472
+# Validation Timestamp: 544516: timestamp: 544516
+# set c2: timestamp: 544516
 
 def test2_test_test():
     """
@@ -34,8 +36,8 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 5667472: timestamp: 5667472
-# set c3: timestamp: 5667472
+# Validation Timestamp: 544516: timestamp: 544516
+# set c3: timestamp: 544516
 
 def test3_test_test():
     """
@@ -46,4 +48,4 @@ def test3_test_test():
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r2: timestamp: 5671052
+# Test Done --> r2: timestamp: 547457
