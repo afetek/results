@@ -1,12 +1,12 @@
-# Get Script Variables: timestamp: 10298708
-# generated script variable --> self.signal2 = 2222: timestamp: 10298723
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 10298743
-# generated script variable --> self.description = "hello r2": timestamp: 10298763
-# generated script variable --> self.signal1 = 222: timestamp: 10298783
-# Test Setup --> r2 Debug Level: 3: timestamp: 10298789
-# Start Test --> : timestamp: 10299206
-# signal1: 222: timestamp: 10299207
-# signal2: 2222: timestamp: 10299207
+# Get Script Variables: timestamp: 79332
+# generated script variable --> self.signal2 = 2222: timestamp: 79347
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 79367
+# generated script variable --> self.description = "hello r2": timestamp: 79387
+# generated script variable --> self.signal1 = 222: timestamp: 79407
+# Test Setup --> r2 Debug Level: 3: timestamp: 79413
+# Start Test --> : timestamp: 79772
+# signal1: 222: timestamp: 79773
+# signal2: 2222: timestamp: 79773
 
 def test1_test_test():
     """
@@ -47,4 +47,4 @@ def test4_test_test():
     assert test_passed, "Failed test4_test"
 
 
-# Test Done --> r2: timestamp: 10299207
+# Test Done --> r2: timestamp: 79773
