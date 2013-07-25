@@ -1,51 +1,72 @@
-# Get Script Variables: timestamp: 1945146
-# generated script variable --> self.s2 = 11: timestamp: 1945161
-# generated script variable --> self.TEST_RUN = "r1": timestamp: 1945181
-# generated script variable --> self.description = "hello r1": timestamp: 1945201
-# generated script variable --> self.s1 = 1: timestamp: 1945221
-# Test Setup --> r1 Debug Level: 3: timestamp: 1945227
-# Start Test --> : timestamp: 1945372
-# signal1: 1: timestamp: 1945373
-# signal2: 11: timestamp: 1945373
-# Waitng ...: timestamp: 1945373
-# ... Ok: timestamp: 1948621
-# self.model.c1.Value == 2.0: timestamp: 1948621
-# self.model.c1.Value == 2.0: timestamp: 1948621
-# self.model.c3.Value == 3.0: timestamp: 1948621
-# Validation Timestamp: 1948621: timestamp: 1948621
-# set c1: timestamp: 1948621
+# Get Script Variables: timestamp: 2370607
+# generated script variable --> self.s2 = 11: timestamp: 2370622
+# generated script variable --> self.TEST_RUN = "r1": timestamp: 2370642
+# generated script variable --> self.description = "hello r1": timestamp: 2370662
+# generated script variable --> self.s1 = 1: timestamp: 2370682
+# Test Setup --> r1 Debug Level: 3: timestamp: 2370688
+# Start Test --> : timestamp: 2370848
+# signal1: 1: timestamp: 2370849
+# signal2: 11: timestamp: 2370849
+# Waitng ...: timestamp: 2370849
+# ... Ok: timestamp: 2379875
 
 def test1_test_test():
     """
-    script1 run r1 test 1: Confirm self.model.d1 is >= 4.0 and <= 6.0: actual value is 4.0
+    script1 run r1 test 1: Exception in Assignment
     """
 
-    test_passed = True
+    test_passed = False
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 1948621: timestamp: 1948621
-# set c2: timestamp: 1948621
 
 def test2_test_test():
     """
-    script1 run r1 test 2: Confirm self.model.d2 is >= 4.0 and <= 6.0: actual value is 4.0
+    script1 run r1 test 2: Exception in Assignment
     """
 
-    test_passed = True
+    test_passed = False
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 1948621: timestamp: 1948621
-# set c3: timestamp: 1948621
 
 def test3_test_test():
     """
-    script1 run r1 test 3: Confirm self.model.d3 is >= 4.0 and <= 6.0: actual value is 6.0
+    script1 run r1 test 3: Exception in Assignment
     """
 
-    test_passed = True
+    test_passed = False
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r1: timestamp: 1950198
+
+def test4_test_test():
+    """
+    script1 run r1 test 4: Exception in Validation: Model instance has no attribute 'd1'
+    """
+
+    test_passed = False
+    assert test_passed, "Failed test4_test"
+
+
+
+def test5_test_test():
+    """
+    script1 run r1 test 5: Exception in Validation: Model instance has no attribute 'd2'
+    """
+
+    test_passed = False
+    assert test_passed, "Failed test5_test"
+
+
+
+def test6_test_test():
+    """
+    script1 run r1 test 6: Exception in Validation: Model instance has no attribute 'd3'
+    """
+
+    test_passed = False
+    assert test_passed, "Failed test6_test"
+
+
+# Test Done --> r1: timestamp: 2383308
