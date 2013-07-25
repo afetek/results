@@ -1,17 +1,21 @@
-# Get Script Variables: timestamp: 8809951
-# generated script variable --> self.TEST_RUN = "r4": timestamp: 8809966
-# generated script variable --> self.fan1_fault = "True": timestamp: 8809986
-# generated script variable --> self.fan2_fault = "True": timestamp: 8810006
-# generated script variable --> self.description = "Fan1 faulted Fan2 faulted at startup mode": timestamp: 8810026
-# Test Setup --> r4 Debug Level: 3: timestamp: 8810032
-# Start Test --> : timestamp: 8810415
-# Powerup Test Script: timestamp: 8810416
-# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 8810416
-# self.model.fan1FaultRead.Value == 1.0: timestamp: 8810416
-# self.model.fan2FaultRead.Value == 1.0: timestamp: 8810416
-# self.model.powerECU.Value == 1.0: timestamp: 8810416
-# Validation Timestamp: 8810463: timestamp: 8810463
-# No Fans Available EICAS message: timestamp: 8810463
+# Get Script Variables: timestamp: 9647488
+# conversion: (enum): timestamp: 9647498
+# generated script variable --> self.fan1_fault = True: timestamp: 9647503
+# conversion: (none): timestamp: 9647518
+# generated script variable --> self.fan2_fault = "True": timestamp: 9647523
+# conversion: (none): timestamp: 9647538
+# generated script variable --> self.TEST_RUN = "r4": timestamp: 9647543
+# conversion: (none): timestamp: 9647558
+# generated script variable --> self.description = "Fan1 faulted Fan2 faulted at startup mode": timestamp: 9647563
+# Test Setup --> r4 Debug Level: 3: timestamp: 9647569
+# Start Test --> : timestamp: 9647907
+# Powerup Test Script: timestamp: 9647908
+# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 9647908
+# self.model.fan1FaultRead.Value == 1.0: timestamp: 9647908
+# self.model.fan2FaultRead.Value == 1.0: timestamp: 9647908
+# self.model.powerECU.Value == 1.0: timestamp: 9647908
+# Validation Timestamp: 9647966: timestamp: 9647966
+# No Fans Available EICAS message: timestamp: 9647966
 
 def test1_test_test():
     """
@@ -22,8 +26,8 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 8811416: timestamp: 8811416
-# fan 2 should not power on: timestamp: 8811416
+# Validation Timestamp: 9648908: timestamp: 9648908
+# fan 2 should not power on: timestamp: 9648908
 
 def test2_test_test():
     """
@@ -34,8 +38,8 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 8811416: timestamp: 8811416
-# fan 1 should not power on: timestamp: 8811416
+# Validation Timestamp: 9648908: timestamp: 9648908
+# fan 1 should not power on: timestamp: 9648908
 
 def test3_test_test():
     """
@@ -46,4 +50,4 @@ def test3_test_test():
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r4: timestamp: 8811416
+# Test Done --> r4: timestamp: 9648908
