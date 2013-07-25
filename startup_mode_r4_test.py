@@ -1,47 +1,49 @@
-# Get Script Variables: timestamp: 5815450
-# generated script variable --> self.TEST_RUN = "r4": timestamp: 5815465
-# generated script variable --> self.fan1_fault = "True": timestamp: 5815485
-# generated script variable --> self.fan2_fault = "True": timestamp: 5815505
-# generated script variable --> self.description = "Fan1 faulted Fan2 faulted at startup mode": timestamp: 5815525
-# Test Setup --> r4 Debug Level: 3: timestamp: 5815531
-# Start Test --> : timestamp: 5815913
-# Powerup Test Script: timestamp: 5815914
-# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 5815914
-# self.model.fan1FaultRead.Value == 1.0: timestamp: 5815914
-# self.model.fan2FaultRead.Value == 1.0: timestamp: 5815914
-# self.model.powerECU.Value == 1.0: timestamp: 5815914
+# Get Script Variables: timestamp: 5933744
+# generated script variable --> self.TEST_RUN = "r4": timestamp: 5933759
+# generated script variable --> self.fan1_fault = "True": timestamp: 5933779
+# generated script variable --> self.fan2_fault = "True": timestamp: 5933799
+# generated script variable --> self.description = "Fan1 faulted Fan2 faulted at startup mode": timestamp: 5933819
+# Test Setup --> r4 Debug Level: 3: timestamp: 5933825
+# Start Test --> : timestamp: 5934151
+# Powerup Test Script: timestamp: 5934152
+# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 5934152
+# self.model.fan1FaultRead.Value == 1.0: timestamp: 5934152
+# self.model.fan2FaultRead.Value == 1.0: timestamp: 5934152
+# self.model.powerECU.Value == 1.0: timestamp: 5934152
+# Validation Timestamp: 5934210: timestamp: 5934210
+# No Fans Available EICAS message: timestamp: 5934210
 
 def test1_test_test():
     """
-    script1 run r4 test 1: Exception in Validation: Model instance has no attribute 'fan1_power_enbale'
+    script1 run r4 test 1: Confirm self.model.eicas is >= 0 and <= 0: actual value is 0.0
     """
 
-    test_passed = False
+    test_passed = True
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 5815976: timestamp: 5815976
-# No Fans Available EICAS message: timestamp: 5815976
+# Validation Timestamp: 5935152: timestamp: 5935152
+# fan 2 should not power on: timestamp: 5935152
 
 def test2_test_test():
     """
-    script1 run r4 test 2: Confirm self.model.eicas is >= 0 and <= 0: actual value is 0.0
+    script1 run r4 test 2: Confirm self.model.fan2_power_enable is < 1 or > 1: actual value is 0.0
     """
 
     test_passed = True
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 5816914: timestamp: 5816914
-# fan 2 should not power on: timestamp: 5816914
+# Validation Timestamp: 5935152: timestamp: 5935152
+# fan 1 should not power on: timestamp: 5935152
 
 def test3_test_test():
     """
-    script1 run r4 test 3: Confirm self.model.fan2_power_enable is < 1 or > 1: actual value is 0.0
+    script1 run r4 test 3: Confirm self.model.fan1_power_enable is < 1 or > 1: actual value is 0.0
     """
 
     test_passed = True
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r4: timestamp: 5816914
+# Test Done --> r4: timestamp: 5935152
