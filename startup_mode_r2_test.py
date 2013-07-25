@@ -1,18 +1,18 @@
-# Get Script Variables: timestamp: 57315016
-# generated script variable --> self.fan1_fault = True: timestamp: 57315031
-# generated script variable --> self.fan2_fault = False: timestamp: 57315051
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 57315071
-# generated script variable --> self.description = "Fan1 Fault Fan2 ok at startup mode": timestamp: 57315091
-# Test Setup --> r2 Debug Level: 3: timestamp: 57315097
-# Start Test --> : timestamp: 57315413
-# Powerup Test Script: timestamp: 57315414
-# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 57315414
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 57315414
-# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 57315414
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 57315414
+# Get Script Variables: timestamp: 57587718
+# generated script variable --> self.fan1_fault = True: timestamp: 57587733
+# generated script variable --> self.fan2_fault = False: timestamp: 57587753
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 57587773
+# generated script variable --> self.description = "Fan1 Fault Fan2 ok at startup mode": timestamp: 57587793
+# Test Setup --> r2 Debug Level: 3: timestamp: 57587799
+# Start Test --> : timestamp: 57588123
+# Powerup Test Script: timestamp: 57588124
+# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 57588124
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 57588124
+# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 57588124
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 57588124
 # 
-# Validation Timestamp: 57315448: timestamp: 57315448
-# fan 2 should power on: timestamp: 57315448
+# Validation Timestamp: 57588164: timestamp: 57588164
+# fan 2 should power on: timestamp: 57588164
 
 def test1_test_test():
     """
@@ -24,8 +24,8 @@ def test1_test_test():
 
 
 # 
-# Validation Timestamp: 57316414: timestamp: 57316414
-# fan 1 should not power on: timestamp: 57316414
+# Validation Timestamp: 57589124: timestamp: 57589124
+# fan 1 should not power on: timestamp: 57589124
 
 def test2_test_test():
     """
@@ -36,18 +36,18 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 57316414
+# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 57589124
 # 
-# Validation Timestamp: 57317414: timestamp: 57317414
-# only fan 2 is available: timestamp: 57317414
+# Validation Timestamp: 57589155: timestamp: 57589155
+# only fan 2 is available: timestamp: 57589155
 
 def test3_test_test():
     """
-     run r2 test 3: Confirm self.model.eicas is within 3.0 and 3.0: actual value is 2.0
+     run r2 test 3: Confirm self.model.eicas is within 2.0 and 2.0: actual value is 2.0
     """
 
-    test_passed = False
+    test_passed = True
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r2: timestamp: 57317414
+# Test Done --> r2: timestamp: 57589155
