@@ -1,20 +1,20 @@
-# Get Script Variables: timestamp: 45923686
-# Convert value for fan1_fault (enum) to a (enum): timestamp: 45923696
-# generated script variable --> self.fan1_fault = False: timestamp: 45923701
-# Convert value for fan2_fault to a (none): timestamp: 45923716
-# generated script variable --> self.fan2_fault = "True": timestamp: 45923721
-# Convert value for TEST_RUN to a (none): timestamp: 45923736
-# generated script variable --> self.TEST_RUN = "r3": timestamp: 45923741
-# Convert value for description to a (none): timestamp: 45923756
-# generated script variable --> self.description = "Fan1 ok Fan2 faulted at startup mode": timestamp: 45923761
-# Test Setup --> r3 Debug Level: 3: timestamp: 45923767
-# Start Test --> : timestamp: 45924077
-# Powerup Test Script: timestamp: 45924078
-# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 45924078
-# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 45924078
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 45924078
-# Validation Timestamp: 45924109: timestamp: 45924109
-# fan 1 should power on: timestamp: 45924109
+# Get Script Variables: timestamp: 46160402
+# Convert value for fan1_fault (enum) to a (enum): timestamp: 46160412
+# generated script variable --> self.fan1_fault = False: timestamp: 46160417
+# Convert value for fan2_fault to a (none): timestamp: 46160432
+# generated script variable --> self.fan2_fault = "True": timestamp: 46160437
+# Convert value for TEST_RUN to a (none): timestamp: 46160452
+# generated script variable --> self.TEST_RUN = "r3": timestamp: 46160457
+# Convert value for description to a (none): timestamp: 46160472
+# generated script variable --> self.description = "Fan1 ok Fan2 faulted at startup mode": timestamp: 46160477
+# Test Setup --> r3 Debug Level: 3: timestamp: 46160483
+# Start Test --> : timestamp: 46160776
+# Powerup Test Script: timestamp: 46160777
+# Testing Requirements: Statrup Mode - 5 through 8: timestamp: 46160777
+# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 46160777
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 46160777
+# Validation Timestamp: 46160810: timestamp: 46160810
+# fan 1 should power on: timestamp: 46160810
 
 def test1_test_test():
     """
@@ -25,8 +25,8 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Validation Timestamp: 45925078: timestamp: 45925078
-# fan 2 should not power on: timestamp: 45925078
+# Validation Timestamp: 46161777: timestamp: 46161777
+# fan 2 should not power on: timestamp: 46161777
 
 def test2_test_test():
     """
@@ -37,8 +37,8 @@ def test2_test_test():
     assert test_passed, "Failed test2_test"
 
 
-# Validation Timestamp: 45925078: timestamp: 45925078
-# Both fans are Available EICAS message: timestamp: 45925078
+# Validation Timestamp: 46161777: timestamp: 46161777
+# Both fans are Available EICAS message: timestamp: 46161777
 
 def test3_test_test():
     """
@@ -49,4 +49,4 @@ def test3_test_test():
     assert test_passed, "Failed test3_test"
 
 
-# Test Done --> r3: timestamp: 45925078
+# Test Done --> r3: timestamp: 46161777
