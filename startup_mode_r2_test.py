@@ -1,10 +1,10 @@
-# Get Script Variables: timestamp: 3523803
-# generated script variable --> self.TEST_RUN = "r2": timestamp: 3523818
-# generated script variable --> self.fan1_fault = "True": timestamp: 3523838
-# generated script variable --> self.fan2_fault = "False": timestamp: 3523858
-# generated script variable --> self.description = "Fan1 Fault Fan2 ok at startup mode": timestamp: 3523878
-# Test Setup --> r2 Debug Level: 3: timestamp: 3523884
-# Start Test --> : timestamp: 3524122
+# Get Script Variables: timestamp: 3915917
+# generated script variable --> self.TEST_RUN = "r2": timestamp: 3915932
+# generated script variable --> self.fan1_fault = "True": timestamp: 3915952
+# generated script variable --> self.fan2_fault = "False": timestamp: 3915972
+# generated script variable --> self.description = "Fan1 Fault Fan2 ok at startup mode": timestamp: 3915992
+# Test Setup --> r2 Debug Level: 3: timestamp: 3915998
+# Start Test --> : timestamp: 3916339
 
 def test1_test_test():
     """
@@ -15,4 +15,4 @@ def test1_test_test():
     assert test_passed, "Failed test1_test"
 
 
-# Test Done --> r2: timestamp: 3524123
+# Test Done --> r2: timestamp: 3916340
