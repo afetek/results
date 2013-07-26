@@ -4,18 +4,18 @@
 # Test Run: r2
 # Description: Fan1 faulted at startup
 # #######################################################
-# : timestamp: 8642081
-# Start Test: : timestamp: 8642211
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 8642212
-# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 8642212
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 8642212
+# : timestamp: 9286044
+# Start Test: : timestamp: 9286275
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 9286276
+# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 9286276
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 9286276
 # 
-# Validation Timestamp: 8642256: timestamp: 8642256
-# fan 2 should power on: timestamp: 8642256
+# Validation Timestamp: 9286319: timestamp: 9286319
+# fan 2 should power on: timestamp: 9286319
 
 def r2_tc1_test():
     """
-    Confirm self.model.fan2_power_enable is within 1.0 and 1.0: actual value is 1.0
+    r2_tc1: Confirm self.model.fan2_power_enable is within 1.0 and 1.0: actual value is 1.0
     """
 
     ##########################
@@ -26,12 +26,12 @@ def r2_tc1_test():
 
 
 # 
-# Validation Timestamp: 8643212: timestamp: 8643212
-# fan 1 should not power on: timestamp: 8643212
+# Validation Timestamp: 9287276: timestamp: 9287276
+# fan 1 should not power on: timestamp: 9287276
 
 def r2_tc2_test():
     """
-    Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
+    r2_tc2: Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
     """
 
     ##########################
@@ -41,15 +41,15 @@ def r2_tc2_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Assigned value 3.0 to variable self.model.fan2_airflow_sensor_fb: timestamp: 8643212
-# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 8643212
+# Assigned value 3.0 to variable self.model.fan2_airflow_sensor_fb: timestamp: 9287276
+# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 9287276
 # 
-# Validation Timestamp: 8643226: timestamp: 8643226
-# only fan 2 is available: timestamp: 8643226
+# Validation Timestamp: 9287299: timestamp: 9287299
+# only fan 2 is available: timestamp: 9287299
 
 def r2_tc3_test():
     """
-    Confirm self.model.eicas is within 2.0 and 2.0: actual value is 2.0
+    r2_tc3: Confirm self.model.eicas is within 2.0 and 2.0: actual value is 2.0
     """
 
     ##########################
@@ -60,12 +60,12 @@ def r2_tc3_test():
 
 
 # 
-# Validation Timestamp: 8643226: timestamp: 8643226
-# low fan speed: timestamp: 8643226
+# Validation Timestamp: 9287299: timestamp: 9287299
+# low fan speed: timestamp: 9287299
 
 def r2_tc4_test():
     """
-    Confirm self.model.fan2_high_low is within 0.0 and 0.0: actual value is 0.0
+    r2_tc4: Confirm self.model.fan2_high_low is within 0.0 and 0.0: actual value is 0.0
     """
 
     ##########################
@@ -75,4 +75,4 @@ def r2_tc4_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r2: timestamp: 8643226
+# Test Done --> r2: timestamp: 9287299

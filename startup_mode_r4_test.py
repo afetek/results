@@ -4,18 +4,18 @@
 # Test Run: r4
 # Description: Fan1 and Fan2 faulted at startup
 # #######################################################
-# : timestamp: 8648166
-# Start Test: : timestamp: 8648296
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 8648297
-# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 8648297
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 8648297
+# : timestamp: 9292138
+# Start Test: : timestamp: 9292270
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 9292271
+# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 9292271
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 9292271
 # 
-# Validation Timestamp: 8649297: timestamp: 8649297
-# fan 1 should not power on: timestamp: 8649297
+# Validation Timestamp: 9293271: timestamp: 9293271
+# fan 1 should not power on: timestamp: 9293271
 
 def r4_tc1_test():
     """
-    Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
+    r4_tc1: Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
     """
 
     ##########################
@@ -26,12 +26,12 @@ def r4_tc1_test():
 
 
 # 
-# Validation Timestamp: 8649297: timestamp: 8649297
-# fan 2 should not power on: timestamp: 8649297
+# Validation Timestamp: 9293271: timestamp: 9293271
+# fan 2 should not power on: timestamp: 9293271
 
 def r4_tc2_test():
     """
-    Confirm self.model.fan2_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
+    r4_tc2: Confirm self.model.fan2_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
     """
 
     ##########################
@@ -42,12 +42,12 @@ def r4_tc2_test():
 
 
 # 
-# Validation Timestamp: 8649297: timestamp: 8649297
-# no fans available: timestamp: 8649297
+# Validation Timestamp: 9293271: timestamp: 9293271
+# no fans available: timestamp: 9293271
 
 def r4_tc3_test():
     """
-    Confirm self.model.eicas is within 0.0 and 0.0: actual value is 0.0
+    r4_tc3: Confirm self.model.eicas is within 0.0 and 0.0: actual value is 0.0
     """
 
     ##########################
@@ -57,4 +57,4 @@ def r4_tc3_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r4: timestamp: 8649297
+# Test Done --> r4: timestamp: 9293271
