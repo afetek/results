@@ -2,21 +2,21 @@
 # Test Name: Powerup Mode
 # Requirements Under Test: 1,5,6,7,8
 # #######################################################
-# : timestamp: 81602141
-# Get Test Data Variables: timestamp: 81602142
-# test data variable --> self.fan1_fault = False: timestamp: 81602145
-# test data variable --> self.fan2_fault = True: timestamp: 81602149
-# test data variable --> self.TEST_RUN = "r3": timestamp: 81602153
-# test data variable --> self.powerup = False: timestamp: 81602157
-# test data variable --> self.description = "Fan1 ok Fan2 faulted at startup mode": timestamp: 81602161
-# Test Setup --> r3 Debug Level: 3: timestamp: 81602163
-# Start Test --> : timestamp: 81602572
-# Assigned value 0.0 to variable self.model.fan1FaultRead: timestamp: 81602573
-# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 81602573
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 81602573
+# : timestamp: 81718396
+# Get Test Data Variables: timestamp: 81718397
+# test data variable --> self.fan1_fault = False: timestamp: 81718400
+# test data variable --> self.fan2_fault = True: timestamp: 81718404
+# test data variable --> self.TEST_RUN = "r3": timestamp: 81718408
+# test data variable --> self.powerup = False: timestamp: 81718412
+# test data variable --> self.description = "Fan1 ok Fan2 faulted at startup mode": timestamp: 81718416
+# Test Setup --> r3 Debug Level: 3: timestamp: 81718418
+# Start Test --> : timestamp: 81718784
+# Assigned value 0.0 to variable self.model.fan1FaultRead: timestamp: 81718785
+# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 81718785
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 81718785
 # 
-# Validation Timestamp: 81602610: timestamp: 81602610
-# fan 1 should power on: timestamp: 81602610
+# Validation Timestamp: 81718825: timestamp: 81718825
+# fan 1 should power on: timestamp: 81718825
 
 def test1_test_test():
     """
@@ -31,8 +31,8 @@ def test1_test_test():
 
 
 # 
-# Validation Timestamp: 81603573: timestamp: 81603573
-# fan 2 should not power on: timestamp: 81603573
+# Validation Timestamp: 81719785: timestamp: 81719785
+# fan 2 should not power on: timestamp: 81719785
 
 def test2_test_test():
     """
@@ -46,10 +46,10 @@ def test2_test_test():
     assert TEST_STATUS == "PASSED", "Failed test2_test"
 
 
-# Assigned value 1.0 to variable self.model.fan1_power_status: timestamp: 81603573
+# Assigned value 1.0 to variable self.model.fan1_power_status: timestamp: 81719785
 # 
-# Validation Timestamp: 81603600: timestamp: 81603600
-# only fan 1 is available: timestamp: 81603600
+# Validation Timestamp: 81719815: timestamp: 81719815
+# only fan 1 is available: timestamp: 81719815
 
 def test3_test_test():
     """
@@ -64,8 +64,8 @@ def test3_test_test():
 
 
 # 
-# Validation Timestamp: 81603600: timestamp: 81603600
-# low fan speed: timestamp: 81603600
+# Validation Timestamp: 81719815: timestamp: 81719815
+# low fan speed: timestamp: 81719815
 
 def test4_test_test():
     """
@@ -79,4 +79,4 @@ def test4_test_test():
     assert TEST_STATUS == "PASSED", "Failed test4_test"
 
 
-# Test Done --> r3: timestamp: 81603600
+# Test Done --> r3: timestamp: 81719815
