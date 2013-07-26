@@ -4,19 +4,19 @@
 # Test Run: r4
 # Test Run Description: Fan1 faulted Fan2 faulted at startup mode
 # #######################################################
-# : timestamp: 7321504
-# Test Setup --> r4 Debug Level: 3: timestamp: 7321505
-# Start Test --> : timestamp: 7321734
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 7321735
-# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 7321735
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7321735
+# : timestamp: 7984648
+# Test Setup --> r4 Debug Level: 3: timestamp: 7984649
+# Start Test --> : timestamp: 7984879
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 7984880
+# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 7984880
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7984880
 # 
-# Validation Timestamp: 7322735: timestamp: 7322735
-# fan 1 should not power on: timestamp: 7322735
+# Validation Timestamp: 7985880: timestamp: 7985880
+# fan 1 should not power on: timestamp: 7985880
 
-def test1_test_test():
+def r4_tc1_test():
     """
-    Run r4 Test 1: Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
+    Confirm self.model.fan1_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
     """
 
     ##########################
@@ -27,12 +27,12 @@ def test1_test_test():
 
 
 # 
-# Validation Timestamp: 7322735: timestamp: 7322735
-# fan 2 should not power on: timestamp: 7322735
+# Validation Timestamp: 7985880: timestamp: 7985880
+# fan 2 should not power on: timestamp: 7985880
 
-def test2_test_test():
+def r4_tc2_test():
     """
-    Run r4 Test 2: Confirm self.model.fan2_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
+    Confirm self.model.fan2_power_enable is NOT within 1.0 and 1.0: actual value is 0.0
     """
 
     ##########################
@@ -43,12 +43,12 @@ def test2_test_test():
 
 
 # 
-# Validation Timestamp: 7322735: timestamp: 7322735
-# no fans available: timestamp: 7322735
+# Validation Timestamp: 7985880: timestamp: 7985880
+# no fans available: timestamp: 7985880
 
-def test3_test_test():
+def r4_tc3_test():
     """
-    Run r4 Test 3: Confirm self.model.eicas is within 0.0 and 0.0: actual value is 0.0
+    Confirm self.model.eicas is within 0.0 and 0.0: actual value is 0.0
     """
 
     ##########################
@@ -58,4 +58,4 @@ def test3_test_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r4: timestamp: 7322735
+# Test Done --> r4: timestamp: 7985880
