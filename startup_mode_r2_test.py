@@ -1,17 +1,18 @@
 # #######################################################
 # Test Name: Startup Mode
 # Requirements Under Test: 1,5,6,7,8
-# Test Run: r2\Test Run Description: Fan1 Fault Fan2 ok at startup mode
+# Test Run: r2
+# Test Run Description: Fan1 Fault Fan2 ok at startup mode
 # #######################################################
-# : timestamp: 7147221
-# Test Setup --> r2 Debug Level: 3: timestamp: 7147222
-# Start Test --> : timestamp: 7147450
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 7147451
-# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 7147451
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7147451
+# : timestamp: 7315417
+# Test Setup --> r2 Debug Level: 3: timestamp: 7315418
+# Start Test --> : timestamp: 7315648
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 7315649
+# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 7315649
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7315649
 # 
-# Validation Timestamp: 7147491: timestamp: 7147491
-# fan 2 should power on: timestamp: 7147491
+# Validation Timestamp: 7315672: timestamp: 7315672
+# fan 2 should power on: timestamp: 7315672
 
 def test1_test_test():
     """
@@ -26,8 +27,8 @@ def test1_test_test():
 
 
 # 
-# Validation Timestamp: 7148451: timestamp: 7148451
-# fan 1 should not power on: timestamp: 7148451
+# Validation Timestamp: 7316649: timestamp: 7316649
+# fan 1 should not power on: timestamp: 7316649
 
 def test2_test_test():
     """
@@ -41,11 +42,11 @@ def test2_test_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Assigned value 3.0 to variable self.model.fan2_airflow_sensor_fb: timestamp: 7148451
-# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 7148451
+# Assigned value 3.0 to variable self.model.fan2_airflow_sensor_fb: timestamp: 7316649
+# Assigned value 1.0 to variable self.model.fan2_power_status: timestamp: 7316649
 # 
-# Validation Timestamp: 7148470: timestamp: 7148470
-# only fan 2 is available: timestamp: 7148470
+# Validation Timestamp: 7316663: timestamp: 7316663
+# only fan 2 is available: timestamp: 7316663
 
 def test3_test_test():
     """
@@ -60,8 +61,8 @@ def test3_test_test():
 
 
 # 
-# Validation Timestamp: 7148470: timestamp: 7148470
-# low fan speed: timestamp: 7148470
+# Validation Timestamp: 7316663: timestamp: 7316663
+# low fan speed: timestamp: 7316663
 
 def test4_test_test():
     """
@@ -75,4 +76,4 @@ def test4_test_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r2: timestamp: 7148470
+# Test Done --> r2: timestamp: 7316663
