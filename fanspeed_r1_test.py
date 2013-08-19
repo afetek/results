@@ -4,14 +4,14 @@
 # Test Run: r1
 # Description: Fans OK at startup
 # #######################################################
-# : timestamp: 6883297
-# Start Test: : timestamp: 6883586
-# Assigned value 0.0 to variable self.model.fan1FaultRead: timestamp: 6883587
-# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 6883587
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 6883587
+# : timestamp: 7440415
+# Start Test: : timestamp: 7440670
+# Assigned value 0.0 to variable self.model.fan1FaultRead: timestamp: 7440671
+# Assigned value 0.0 to variable self.model.fan2FaultRead: timestamp: 7440671
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7440671
 # 
-# Validation Timestamp: 6883628: timestamp: 6883628
-# fan 1 should power on: timestamp: 6883628
+# Validation Timestamp: 7440704: timestamp: 7440704
+# fan 1 should power on: timestamp: 7440704
 
 def r1_tc1_test():
     """
@@ -26,8 +26,8 @@ def r1_tc1_test():
 
 
 # 
-# Validation Timestamp: 6884587: timestamp: 6884587
-# fan 2 should not power on: timestamp: 6884587
+# Validation Timestamp: 7441671: timestamp: 7441671
+# fan 2 should not power on: timestamp: 7441671
 
 def r1_tc2_test():
     """
@@ -41,11 +41,11 @@ def r1_tc2_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Assigned value 3.0 to variable self.model.fan1_airflow_sensor_fb: timestamp: 6884587
-# Assigned value 1.0 to variable self.model.fan1_power_status: timestamp: 6884587
+# Assigned value 3.0 to variable self.model.fan1_airflow_sensor_fb: timestamp: 7441671
+# Assigned value 1.0 to variable self.model.fan1_power_status: timestamp: 7441671
 # 
-# Validation Timestamp: 6884619: timestamp: 6884619
-# both fans are available: timestamp: 6884619
+# Validation Timestamp: 7441696: timestamp: 7441696
+# both fans are available: timestamp: 7441696
 
 def r1_tc3_test():
     """
@@ -60,8 +60,8 @@ def r1_tc3_test():
 
 
 # 
-# Validation Timestamp: 6884619: timestamp: 6884619
-# low fan speed: timestamp: 6884619
+# Validation Timestamp: 7441696: timestamp: 7441696
+# low fan speed: timestamp: 7441696
 
 def r1_tc4_test():
     """
@@ -75,4 +75,4 @@ def r1_tc4_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r1: timestamp: 6884619
+# Test Done --> r1: timestamp: 7441696
