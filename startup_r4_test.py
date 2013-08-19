@@ -4,14 +4,14 @@
 # Test Run: r4
 # Description: Fan1 and Fan2 faulted at startup
 # #######################################################
-# : timestamp: 7835581
-# Start Test: : timestamp: 7835869
-# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 7835870
-# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 7835870
-# Assigned value 1.0 to variable self.model.powerECU: timestamp: 7835870
+# : timestamp: 19560526
+# Start Test: : timestamp: 19560721
+# Assigned value 1.0 to variable self.model.fan1FaultRead: timestamp: 19560722
+# Assigned value 1.0 to variable self.model.fan2FaultRead: timestamp: 19560722
+# Assigned value 1.0 to variable self.model.powerECU: timestamp: 19560722
 # 
-# Validation Timestamp: 7836870: timestamp: 7836870
-# fan 1 should not power on: timestamp: 7836870
+# Validation Timestamp: 19561722: timestamp: 19561722
+# fan 1 should not power on: timestamp: 19561722
 
 def r4_tc1_test():
     """
@@ -26,8 +26,8 @@ def r4_tc1_test():
 
 
 # 
-# Validation Timestamp: 7836870: timestamp: 7836870
-# fan 2 should not power on: timestamp: 7836870
+# Validation Timestamp: 19561722: timestamp: 19561722
+# fan 2 should not power on: timestamp: 19561722
 
 def r4_tc2_test():
     """
@@ -42,8 +42,8 @@ def r4_tc2_test():
 
 
 # 
-# Validation Timestamp: 7836870: timestamp: 7836870
-# no fans available: timestamp: 7836870
+# Validation Timestamp: 19561722: timestamp: 19561722
+# no fans available: timestamp: 19561722
 
 def r4_tc3_test():
     """
@@ -57,4 +57,4 @@ def r4_tc3_test():
     assert TEST_STATUS == "PASSED", "*** TEST FAILED ***"
 
 
-# Test Done --> r4: timestamp: 7836870
+# Test Done --> r4: timestamp: 19561722
